@@ -1,6 +1,7 @@
 package com.example.practica1
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -18,7 +19,9 @@ import com.example.practica1.databinding.ActivityScrollingBinding
 class ScrollingActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityScrollingBinding
-    val openURL = Intent(View.)
+
+    val openURL = Intent(Intent.ACTION_VIEW)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -29,8 +32,36 @@ class ScrollingActivity : AppCompatActivity() {
         loadImage("https://pbs.twimg.com/media/ECBTmgrWsAEpSWJ?format=jpg&name=900x900",binding.content.img2)
         loadImage("https://nexus.leagueoflegends.com/wp-content/uploads/2018/04/LOL_CMS_198_Article_01_ifsox5gchrv42f65its8.jpg",binding.content.img3)
         loadImage("https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9e/Skin_Splash_Classic_Kennen.jpg/revision/latest/scale-to-width-down/350?cb=20191212182720",binding.content.img4)
-        
+
+
+        binding.content.btnEnlace.setOnClickListener{
+            val url1: String ="https://www.leagueoflegends.com/es-es/champions/diana/"
+            openURL.data = Uri.parse(url1)
+            startActivity(openURL)
+        }
+
+        binding.content.btnEnlace2.setOnClickListener{
+            val url1: String ="https://www.leagueoflegends.com/es-es/champions/pantheon/"
+            openURL.data = Uri.parse(url1)
+            startActivity(openURL)
+        }
+
+        binding.content.btnEnlace3.setOnClickListener{
+            val url1: String ="https://www.leagueoflegends.com/es-es/champions/kai-sa/"
+            openURL.data = Uri.parse(url1)
+            startActivity(openURL)
+        }
+
+        binding.content.btnEnlace4.setOnClickListener{
+            val url1: String ="https://www.leagueoflegends.com/es-es/champions/kennen/"
+            openURL.data = Uri.parse(url1)
+            startActivity(openURL)
+        }
     }
+
+
+
+
 
 
 
