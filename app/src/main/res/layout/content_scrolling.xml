@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="@dimen/common_padding_default">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/common_padding_default"
+            android:paddingStart="@dimen/common_padding_default"
+            android:paddingEnd="@dimen/common_padding_default"
+            android:background="#e1bee7">
+
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/img_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+
+            <TextView
+                android:id="@+id/titulo1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/card_p1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textAppearance="?attr/textAppearanceHeadline5">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/resumen1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/card_resumen1"
+                app:layout_constraintTop_toBottomOf="@id/titulo1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_enlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enlace"
+                app:icon="@drawable/ic_enlace"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resumen1"
+                android:backgroundTint="#4a0072"/>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="@dimen/common_padding_default">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:background="#e1bee7">
+
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/img_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/titulo2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_p2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAppearance="?attr/textAppearanceHeadline5">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/resumen2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_resumen2"
+                    app:layout_constraintTop_toBottomOf="@id/titulo2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_enlace2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enlace"
+                    app:icon="@drawable/ic_enlace"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/resumen2"
+                    android:backgroundTint="#4a0072"/>
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="@dimen/common_padding_default">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:background="#e1bee7">
+
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/img_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/titulo3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_p3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAppearance="?attr/textAppearanceHeadline5">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/resumen3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_resumen3"
+                    app:layout_constraintTop_toBottomOf="@id/titulo3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_enlace3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enlace"
+                    app:icon="@drawable/ic_enlace"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/resumen3"
+                    android:backgroundTint="#4a0072"/>
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="@dimen/common_padding_default">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:background="#e1bee7">
+
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/img_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/titulo4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_p4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAppearance="?attr/textAppearanceHeadline5">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/resumen4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_resumen4"
+                    app:layout_constraintTop_toBottomOf="@id/titulo4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_enlace4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enlace"
+                    app:icon="@drawable/ic_enlace"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/resumen4"
+                    android:backgroundTint="#4a0072"/>
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
