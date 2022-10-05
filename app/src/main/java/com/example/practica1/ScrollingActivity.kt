@@ -62,5 +62,5 @@ class ScrollingActivity : AppCompatActivity() {
             .into(iv)
     }
 
-   
+
 }
